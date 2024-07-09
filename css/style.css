@@ -32,6 +32,7 @@ body {
 }
 
 .left-button {
+    display: flex;
     float: left;
     width: 70%;
     height: auto;
@@ -91,6 +92,7 @@ body {
 }
 
 #btn-encriptar {
+    max-width: 328px;
     padding: 24px;
     width: 30%;
     height: 60%;
@@ -99,12 +101,22 @@ body {
     background: #0A3871;
 }
 #btn-desencriptar {
+    max-width: 328px;
     padding: 24px;
     width: 30%;
     height: 60%;
     border-radius: 24px;
     margin-left: 10%;
     background: #D8DFE8;
+}
+
+#btn-encriptar, #btn-desencriptar {
+    max-width: 328px;
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 24px;
+    margin-left: 10%;
 }
 
 #copiar {
@@ -116,4 +128,71 @@ body {
     background: #D8DFE8;
     border-radius: 24px;
     display: none;
+}
+
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encriptar {
+        width: 100%;
+    }
+
+    .text-input {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+
+    .terminos {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .terminos p {
+        font-size: 16px;
+    }
+
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+
+    .encriptado {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .mensaje-encriptado {
+        width: 100%;
+        top: 5%;
+    }
+
+    .imgDerecha {
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
 }
